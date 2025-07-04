@@ -14,10 +14,24 @@
         }
 
 
-        //Will be overridden with the ExpirableProduct only
+        //Will be overridden by the ExpirableProduct only
         public virtual bool IsExpired() => false;
 
         // Reduce the Quantity of the product after customer order
-        public void ReduceQuantity(int orderedAmount) => Quantity -= orderedAmount;
+        public void ReduceQuantity(int orderedAmount)
+        {
+            if (orderedAmount < 0)
+            {
+                Console.WriteLine("Error: Ordered amount can't be negative !");
+                return;
+            }
+            if (orderedAmount > Quantity)
+            {
+                Console.WriteLine("Error: Ordered amount exceeds the available quantity !");
+                return;
+            }
+
+            Quantity -= orderedAmount;
+        }
     }
 }
