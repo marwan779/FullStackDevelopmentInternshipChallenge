@@ -1,4 +1,6 @@
-﻿namespace FawryChallenge.Models
+﻿using FawryChallenge.Services.ShippingService;
+
+namespace FawryChallenge.Models
 {
     public class Cart
     {
@@ -35,6 +37,32 @@
             }
 
             return total;
+        }
+
+        //Collect the Shippable items
+        public List<IShippable> GetShippables()
+        {
+            List<IShippable> shippables = new List<IShippable>();
+
+            if (IsEmpty())
+            {
+                Console.WriteLine("Error: The cart is currently empty !");
+            }
+            else
+            {
+                foreach (CartItem item in CartItems)
+                {
+                    if(item.Product is IShippable shippable)
+                    {
+                        for(int i = 0; i < item.Quantity; i++)
+                        {
+                            shippables.Add(shippable);
+                        }
+                    }
+                }
+            }
+
+            return shippables;
         }
     }
 }

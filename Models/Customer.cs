@@ -15,5 +15,8 @@ namespace FawryChallenge.Models
             Name = name;
             Balance = balance;
         }
+
+        //Cut the Balance of the customer after the checkout 
+        public void UpdateBalance(double cuttingAmount) => Balance -= cuttingAmount;
     }
 }

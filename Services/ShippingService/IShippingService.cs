@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace FawryChallenge.Services.ShippingService
 {
-    internal interface IShippingSerivce
+    public interface IShippingService
     {
+        public void GetShipmentNotice(List<IShippable> shippingList);
+        public double CalculateShippingFees(List<IShippable> shippingList);
     }
 }
