@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using FawryChallenge.Services.ShippingService;
+using FawryChallenge.Services;
 
 namespace FawryChallenge.Models
 {

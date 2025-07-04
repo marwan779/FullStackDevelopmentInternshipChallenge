@@ -1,5 +1,5 @@
 ﻿
-using FawryChallenge.Services.ShippingService;
+using FawryChallenge.Services;
 
 namespace FawryChallenge.Models
 {
