@@ -79,14 +79,13 @@ The project includes a variety of tests to validate system behavior:
 │ ├── Cart.cs
 │ ├── CartItem.cs
 │ └── Customer.cs
-│
 ├── Services/
 │ ├── CheckOutService.cs
 │ ├── ShippingService.cs
 │ └── IShippable.cs
-│
 ├── Testing/
 │ └── TestingCases.cs
+
 
 ## Console Output
 
