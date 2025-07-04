@@ -14,6 +14,9 @@
         }
 
 
+        //Will be overridden with the ExpirableProduct only
+        public virtual bool IsExpired() => false;
+
         // Reduce the Quantity of the product after customer order
         public void ReduceQuantity(int orderedAmount) => Quantity -= orderedAmount;
     }
