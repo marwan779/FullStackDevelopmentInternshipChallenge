@@ -32,7 +32,7 @@ namespace FawryChallenge.TestingClasses
             Console.WriteLine("\n--- Test: Add More Than Available ---");
 
             var cart = new Cart();
-            var tv = new ShippableProduct("TV", 500, 2, 700);
+            var tv = new ShippableProduct("TV", 2, 500, 700);
             cart.Add(tv, 3);
         }
 
@@ -64,7 +64,7 @@ namespace FawryChallenge.TestingClasses
             Console.WriteLine("\n--- Test: Insufficient Balance ---");
 
             var customer = new Customer("PoorGuy", 100);
-            var tv = new ShippableProduct("TV", 200, 1, 500);
+            var tv = new ShippableProduct("TV", 1, 200, 500);
 
             var cart = new Cart();
             cart.Add(tv, 1);
@@ -106,7 +106,7 @@ namespace FawryChallenge.TestingClasses
         {
             Console.WriteLine("\n--- Test: Stock Decreases After Checkout ---");
 
-            var product = new BaseProduct("Battery", 30, 5);
+            var product = new BaseProduct("Battery", 5, 30);
             var customer = new Customer("Tester", 500);
 
             var cart = new Cart();

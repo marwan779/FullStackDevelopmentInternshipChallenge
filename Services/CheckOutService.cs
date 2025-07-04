@@ -31,6 +31,7 @@ namespace FawryChallenge.Services
             Console.WriteLine("** Checkout receipt **");
             foreach (CartItem item in cart.CartItems)
             {
+                item.Product.ReduceQuantity(item.Quantity);
                 Console.WriteLine($"{item.Quantity}x {item.Product.Name}\t{item.ItemPrice()}");
             }
 

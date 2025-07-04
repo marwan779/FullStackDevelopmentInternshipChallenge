@@ -18,7 +18,11 @@ namespace FawryChallenge.Models
                 Console.WriteLine($"Error: Cannot add {product.Name} because it is expired.");
                 return;
             }
-
+            if (amount <= 0)
+            {
+                Console.WriteLine($"Error: Cannot add {amount} of {product.Name}. Quantity must be greater than 0.");
+                return;
+            }
             CartItems.Add(new CartItem(product, amount));
         }
         
