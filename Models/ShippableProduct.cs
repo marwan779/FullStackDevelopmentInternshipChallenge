@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using FawryChallenge.Services.ShippingService;
 
 namespace FawryChallenge.Models
 {
-    public class ShippableProduct : BaseProduct
+    public class ShippableProduct : BaseProduct, IShippable
     {
         public double Weight { get; set; }
         public ShippableProduct(string name, int quantity, double price, double weight)
@@ -15,7 +12,14 @@ namespace FawryChallenge.Models
             Weight = weight;
         }
 
+        public string GetName()
+        {
+           return Name;
+        }
 
-
+        public double GetWeight()
+        {
+            return Weight;
+        }
     }
 }

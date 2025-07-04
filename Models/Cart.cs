@@ -8,12 +8,12 @@
         {
             if(product.Quantity < amount)
             {
-                Console.WriteLine($"Cannot add {amount} of {product.Name}. Only {product.Quantity} available.");
+                Console.WriteLine($"Error: Cannot add {amount} of {product.Name}. Only {product.Quantity} available.");
                 return;
             }
             if (product.IsExpired())
             {
-                Console.WriteLine($"Cannot add {product.Name} because it is expired.");
+                Console.WriteLine($"Error: Cannot add {product.Name} because it is expired.");
                 return;
             }
 
