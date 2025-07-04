@@ -76,15 +76,17 @@ The project includes a variety of tests to validate system behavior:
 │ ├── ExpirableProduct.cs
 │ ├── ShippableProduct.cs
 │ ├── ExpirableShippableProduct.cs
-| ├── Cart.cs
-| ├── CartItem.cs
-| └── Customer.cs
+│ ├── Cart.cs
+│ ├── CartItem.cs
+│ └── Customer.cs
+│
 ├── Services/
 │ ├── CheckOutService.cs
 │ ├── ShippingService.cs
-| └── IShippable.cs
+│ └── IShippable.cs
+│
 ├── Testing/
-│ ├── TestingCases.cs
+│ └── TestingCases.cs
 
 ## Console Output
 
