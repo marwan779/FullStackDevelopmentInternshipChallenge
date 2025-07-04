@@ -64,27 +64,6 @@ The project includes a variety of tests to validate system behavior:
 - Object-Oriented Design
 - Console Application
 
----
-
-## 📂 Project Structure
-
-/FawryChallenge
-│
-├── Program.cs # Main entry with test cases
-├── Models/
-│ ├── BaseProduct.cs
-│ ├── ExpirableProduct.cs
-│ ├── ShippableProduct.cs
-│ ├── ExpirableShippableProduct.cs
-│ ├── Cart.cs
-│ ├── CartItem.cs
-│ └── Customer.cs
-├── Services/
-│ ├── CheckOutService.cs
-│ ├── ShippingService.cs
-│ └── IShippable.cs
-├── Testing/
-│ └── TestingCases.cs
 
 ---
 
@@ -95,7 +74,11 @@ The project includes a variety of tests to validate system behavior:
 ![Screenshot (222)](https://github.com/user-attachments/assets/2ed1209c-664f-4745-bff8-f160ad1b342a)
 
 
-📣 Author
-Marwan Mohamed
+---
+
+## 📣 Author
+
+**Marwan Mohamed**  
 Passionate about .NET development, clean architecture, and problem solving.
+
 
