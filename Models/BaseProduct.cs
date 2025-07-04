@@ -1,0 +1,20 @@
+﻿namespace FawryChallenge.Models
+{
+    public class BaseProduct
+    {
+        public string Name { get; set; }
+        public int Quantity { get; set; }
+        public double Price { get; set; }
+
+        public BaseProduct(string name, int quantity, double price)
+        {
+            Name = name;
+            Quantity = quantity;
+            Price = price;
+        }
+
+
+        // Reduce the Quantity of the product after customer order
+        public void ReduceQuantity(int orderedAmount) => Quantity -= orderedAmount;
+    }
+}
