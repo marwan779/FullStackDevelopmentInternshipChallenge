@@ -35,8 +35,8 @@ namespace FawryChallenge.Services
             }
 
             Console.WriteLine("----------------------");
-            Console.WriteLine($"Subtotal\t\t{cartSubTotal:F0}");
-            Console.WriteLine($"Shipping\t\t{shippingFees:F0}");
+            Console.WriteLine($"Subtotal\t{cartSubTotal:F0}");
+            Console.WriteLine($"Shipping\t{shippingFees:F0}");
             Console.WriteLine($"Amount\t\t{totalAmount:F0}");
             Console.WriteLine($"Balance left\t{customer.Balance:F0}");
 
